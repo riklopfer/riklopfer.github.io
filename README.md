@@ -1,3 +1,3 @@
 # [riklopfer](https://riklopfer.github.io)
 
-[Stuff](stuff.html)
+[Klopfer COVID Dashboard](kovid-dashboard.html) :P

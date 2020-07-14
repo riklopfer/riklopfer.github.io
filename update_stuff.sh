@@ -9,8 +9,8 @@
 	--metric=cases100k \
 	--window=7 \
 	--start="2020-03-8" \
-	--out_file=/home/rklopfer/Work/Source/Git/GitHub/riklopfer.github.io/stuff.html \
+	--out_file=/home/rklopfer/Work/Source/Git/GitHub/riklopfer.github.io/kovid-dashboard.html \
 && git -C /home/rklopfer/Work/Source/Git/GitHub/riklopfer.github.io/ \
-	commit -m "updating stuff" stuff.html \
+	commit -m "updating kovid-dashboard" kovid-dashboard.html \
 && git push
 
