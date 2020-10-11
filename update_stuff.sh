@@ -2,10 +2,12 @@
 
 LOC=$(dirname $0)
 
+# Pull
 # Regenerate the file
 # Commit
 # Push
-${LOC}/../covid-testing/plot_data.py \
+git -C $LOC pull \
+&& ${LOC}/../covid-testing/plot_data.py \
 	"Contra Costa,CA" "Allegheny,PA" "Clark,OH" "Fairfield,CT" "USA" \
 	--metrics=cases100k,deaths100k,positive-test-rate,tests100k \
 	--windows=7 \
