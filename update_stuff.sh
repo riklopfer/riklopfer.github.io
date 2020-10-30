@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+[[ -z $COVID_PY ]] && COVID_PY=python
+
 LOC=$(dirname $0)
 
 # Pull
@@ -7,7 +9,7 @@ LOC=$(dirname $0)
 # Commit
 # Push
 git -C $LOC pull \
-&& ${LOC}/../covid-testing/plot_data.py \
+&& $COVID_PY ${LOC}/../covid-testing/plot_data.py \
 	"Contra Costa,CA" "Allegheny,PA" "Clark,OH" "Fairfield,CT" "USA" \
 	--metrics=cases100k,deaths100k,positive-test-rate,tests100k \
 	--windows=7 \
