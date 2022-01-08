@@ -28,7 +28,7 @@ ${VENV_DIR}/bin/pip install -r ${PLOTS_CODE}/requirements.txt
 # Regenerate the file
 # Commit
 # Push
-git -C $LOC pull --ff-only \
+git -C $LOC pull \
 && ${VENV_DIR}/bin/python ${PLOTS_CODE}/plot_data.py \
   "Contra Costa,CA" "Allegheny,PA" "Clark,OH" "Fairfield,CT" "USA" \
   --metrics=cases100k,deaths100k,positive-test-rate,tests100k \
