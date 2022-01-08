@@ -1,3 +1,4 @@
-# [riklopfer](https://riklopfer.github.io)
+# Russell Klopfer
 
-[Klopfer COVID Dashboard](kovid-dashboard.html) :P
+* [Github](https://github.com/riklopfer)
+* [Klopfer COVID Dashboard](kovid-dashboard.html)
