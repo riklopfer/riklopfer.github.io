@@ -21,7 +21,7 @@
 title: Russell Klopfer
 email: russell.klopfer@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-Words, words, words
+  Words, words, words
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: klopfer.us
 url: "https://klopfer.us" # the base hostname & protocol for your site, e.g. http://example.com
