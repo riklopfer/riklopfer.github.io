@@ -1,2 +1,1 @@
-* [Klopfer COVID Dashboard](kovid-dashboard.html)
-* [Github](https://github.com/riklopfer)
+A webpage made by me. [Check it out](https://klopfer.us)
