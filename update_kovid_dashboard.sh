@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+set -e
+
 LOC="$(dirname $0)"
+
+git -C $LOC pull
 
 # Make sure we have what we need
 # clone or update testing repo
@@ -22,8 +26,7 @@ else
   ${VENV_DIR}/bin/pip install -U pip
 fi
 
-${VENV_DIR}/bin/pip install -r ${PLOTS_CODE}/requirements.txt
-
+${VENV_DIR}/bin/pip install -Ur ${PLOTS_CODE}/requirements.txt
 
 # Regenerate the file
 # Pull
