@@ -39,3 +39,5 @@ git -C $LOC pull \
   commit -m "updating kovid-dashboard" kovid-dashboard.html \
 && git -C $LOC push
 
+/home/pi/bin/gdrive -c /home/pi/.gdrive upload kovid-dashboard.html  
+
