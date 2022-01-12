@@ -24,17 +24,18 @@ fi
 
 ${VENV_DIR}/bin/pip install -r ${PLOTS_CODE}/requirements.txt
 
-# Pull
+
 # Regenerate the file
+# Pull
 # Commit
 # Push
-git -C $LOC pull \
-&& ${VENV_DIR}/bin/python ${PLOTS_CODE}/plot_data.py \
+${VENV_DIR}/bin/python ${PLOTS_CODE}/plot_data.py \
   "Contra Costa,CA" "Allegheny,PA" "Clark,OH" "Fairfield,CT" "USA" \
   --metrics=cases100k,deaths100k,positive-test-rate,tests100k \
   --windows=7 \
   --start="2020-03-8" \
   --out_file=$LOC/kovid-dashboard.html \
+&& git -C $LOC pull \
 && git -C $LOC/ \
   commit -m "updating kovid-dashboard" kovid-dashboard.html \
 && git -C $LOC push
