@@ -37,7 +37,7 @@ plugins:
 prose:
   rooturl: '_posts'
   siteurl: 'https://klopfer.us/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  relativeLinks: 'https://klopfer.us/links.jsonp'
   media: 'media'
   ignore:
     - index.md
