@@ -32,9 +32,10 @@ ${VENV_DIR}/bin/pip install -Ur ${PLOTS_CODE}/requirements.txt
 # Pull
 # Commit
 # Push
+# deprecated: ,positive-test-rate,tests100k
 ${VENV_DIR}/bin/python ${PLOTS_CODE}/plot_data.py \
   "Contra Costa,CA" "Allegheny,PA" "Clark,OH" "Fairfield,CT" "USA" \
-  --metrics=cases100k,deaths100k,positive-test-rate,tests100k \
+  --metrics=cases100k,deaths100k \
   --windows=7 \
   --start="2020-03-8" \
   --out_file=$LOC/kovid-dashboard.html \
